@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
   generateName: zero-to-inference-with-kubeflow-
-  annotations: {pipelines.kubeflow.org/kfp_sdk_version: 1.6.6, pipelines.kubeflow.org/pipeline_compilation_time: '2021-10-19T13:45:23.341825',
+  annotations: {pipelines.kubeflow.org/kfp_sdk_version: 1.6.6, pipelines.kubeflow.org/pipeline_compilation_time: '2021-10-19T14:36:47.620518',
     pipelines.kubeflow.org/pipeline_spec: '{"description": "Example pipeline for the
       Dell Data Science Week 2021 Zero to Inference with Kubeflow Session", "inputs":
       [{"default": "/mnt", "description": "Directory where we want to save our model.
@@ -137,6 +137,7 @@ spec:
       - {name: train_steps}
       - {name: ztik-pvc-name}
     metadata:
+      annotations: {pipelines.kubeflow.org/task_display_name: Train MNIST Classifier}
       labels:
         pipelines.kubeflow.org/kfp_sdk_version: 1.6.6
         pipelines.kubeflow.org/pipeline-sdk-type: kfp
@@ -188,7 +189,7 @@ spec:
           - ReadWriteMany
           resources:
             requests:
-              storage: 20Gi
+              storage: 1Gi
     inputs:
       parameters:
       - {name: pvc_name}

@@ -46,7 +46,7 @@ def pipeline(model_export_dir: str ='/mnt',
                                 "--tf-batch-size", batch_size,
                                 "--tf-learning-rate", learning_rate
                             ],
-                            pvolumes={'/mnt': vop.volume})
+                            pvolumes={'/mnt': vop.volume}).set_display_name("Train MNIST Classifier")
     
     ops['train'].after(vop)
 
