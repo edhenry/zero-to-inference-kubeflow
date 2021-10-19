@@ -90,3 +90,21 @@ Verify the status of the Kubeflow pods by using the `microk8s.kubectl get pods -
 ```
 
  Your output should look similar to what is shown below. `SEE THE NOTE ABOVE`.
+
+One Kubeflow is completed installing we can now configure port forwarding of the `istio-ingressgateway` so we can access the Kubeflow UI on our localhost.
+
+```bash
+   microk8s.kubectl port-forward svc/istio-ingressgateway -n istio-system 8085:80
+```
+
+Your output should look like the below :
+
+```bash
+   Forwarding from 127.0.0.1:8085 -> 8080
+   Forwarding from [::1]:8085 -> 8080
+```
+
+You can now open a browser and browse to [http://localhost:8085](http://localhost:8085) and you will be prompted to authenticate to proceed to the Kubeflow dashboard. The username and password are below.
+
+**username**: `user@example.com`
+**password**: `12341234`
