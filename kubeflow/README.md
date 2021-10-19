@@ -108,3 +108,5 @@ You can now open a browser and browse to [http://localhost:8085](http://localhos
 
 **username**: `user@example.com`
 **password**: `12341234`
+
+![Kubeflow Login](../images/kubeflow_login.gif)
