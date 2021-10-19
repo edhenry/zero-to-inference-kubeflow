@@ -1,0 +1,122 @@
+@media only screen
+and (min-width: 100px)
+and (max-width: 1000px)
+and (orientation: portrait){
+    canvas {
+        border: 5px solid red;
+        touch-action: none;
+    }
+}
+
+
+@media only screen 
+and (min-width: 1000px)
+and (max-width: 2440px){
+    body {
+        background-image: url("/static/images/bg.jpg");
+        background-position:center 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+    #canvas_div{
+        z-index:1; 
+        position: relative;
+        text-align: center;
+        height: 0px;  
+    }
+    canvas {
+        background-color: rgb(255, 251, 0);
+        margin: auto;
+        margin-top: 60px;
+    }
+    #title {
+        font-family: 'Gloria Hallelujah', cursive;
+        text-align: center;
+        color: rgb(255, 251, 0);
+        margin-top: 30px;
+        
+    }
+    #header {
+        background-color: rgba(184, 58, 216, 0.7);
+    }
+
+    .cust_button{
+        pointer-events: auto;
+        background-color: rgba(255, 251, 0, 0.5);
+        border-radius: 4px;
+        border-color: rgb(77, 163, 74);
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Faster One', cursive;
+        font-size: 25px;
+        color: rgb(216, 19, 167);
+    }
+
+    #predict_div{
+        pointer-events: none;
+        position:relative;
+        top: -230px;
+        height: 0px;
+    }
+
+    #predict{
+        position:relative;
+        top:250px;
+    }
+
+    #num_predict{
+        position:relative;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 300px;
+        top:-380px;
+        left:700px;
+        color: rgb(255, 31, 162);
+    }
+
+    #add_div{
+        pointer-events: none;
+        position: relative;
+        left: 1130px;
+        top: -280px;
+        width: 400px;
+        height: 0px;
+    }
+
+    #add{
+        position:relative;
+        right: 30px;
+    }
+
+    #del{
+        position:relative;
+        left: 25px;
+    }
+
+    #train_div{
+        pointer-events: none;
+        position:relative;
+        right:370px;
+        top:-280px;
+        height: 0px;
+    }
+
+    #ground{
+        pointer-events: auto;
+        background-color: rgba(255, 251, 0, 0.7);
+        color: rgb(234, 0, 255);
+        border: 0px;
+        padding: 8px;
+        position: relative;
+        right: 36px;
+        margin-top: 10px;
+    }
+
+    #thumbs{
+        height: 0px;
+        position:relative;
+        top: -570px;
+    }
+}

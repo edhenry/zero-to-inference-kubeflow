@@ -1,0 +1,10 @@
+apiVersion: "serving.kubeflow.org/v1alpha2"
+kind: "InferenceService"
+metadata:
+  name: "mnist-sample"
+  namespace: "kubeflow-user-example-com"
+spec:
+  default:
+    predictor:
+      tensorflow:
+        storageUri: "pvc://zero-to-inference-with-kubeflow-nr9rx-ztik-pvc-1"
