@@ -13,3 +13,9 @@ See the gif below for a quick overview of creating a notebook server.
 We will need to upload the provided notebook and example images for use in evaluating our model. This is quick and easy using the Jupyter Notebook Server UI as shown below.
 
 ![Upload Notebook and data](../images/upload_notebook_data.gif)
+
+## Evaluate trained model
+
+We can now use our notebook to perform evaluations of new inputs with our model.
+
+![Evaluate new inputs](../images/new_input_evaluation.gif)
