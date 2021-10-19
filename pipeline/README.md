@@ -28,3 +28,8 @@ We can upload this pipeline through the Kubeflow UI.
 
 ![Upload Pipeline](../images/upload_pipeline.gif)
 
+## Creating a Pipeline Run
+
+Once the pipeline has been uploaded, we can create a run of the pipeline as shown in the example below.
+
+![Create Pipeline Run](../images/create_pipeline_run.gif)
