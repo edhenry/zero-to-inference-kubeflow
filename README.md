@@ -10,7 +10,7 @@ Please follow the README's that are provided for each of the [Components](#compo
 
 The graph below provides the high level overview of the process that should be followed.
 
-[Install Microk8s](./microk8s/README.md) --> [Deploy Kubeflow](./kubeflow/README.md) --> [Deploy Pipeline](./pipeline/README.md) --> [Create Notebook Server](./notebooks/README.md) --> [Upload Notebook and Data](./notebooks/README.md#upload-our-notebook-and-data) --> [Evaluate Served Model](./notebooks/README.md#evaluate-trained-model)
+[Install Microk8s](./microk8s/README.md) --> [Deploy Kubeflow](./kubeflow/README.md) --> [Deploy Pipeline](./pipeline/README.md) --> [Create Notebook Server](./notebooks/README.md) --> [Upload Notebook and Data](./notebooks/README.md#upload-our-notebook-and-data) --> [Evaluate New Inputs](./notebooks/README.md#evaluate-trained-model)
 
 ## Components
 
