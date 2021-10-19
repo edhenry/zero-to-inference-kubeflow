@@ -13,3 +13,21 @@ The [microk8s directory contains a README](./microk8s/README.md) of all of the n
 ## Kubeflow
 
 The [kubeflow directory contains a README](./kubeflow/README.md) of all of the necessary commands that will need to be issued to install Kubeflow on your local microk8s installation.
+
+```text
+NOTE: I've made some edits to the default manifests that are provided with Kubeflow to accomodate some of the intricacies of a local deployment of the stack. Please be aware that these manifests are not what are provided on the main repo v1.3 branch.
+```
+
+## Kubeflow Pipeline
+
+[Contained in the pipeline directory](./pipeline) is a simple [Kubeflow Pipeline](https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview/) that will train an MNIST classifier and deploy the trained model using [KFServing](https://www.kubeflow.org/docs/components/kfserving/kfserving/) local to the Kubeflow installation.
+
+## Notebook
+
+[Contained in the notebooks directory is a notebook](./notebooks/MNIST%20Sample%20Test.ipynb) we can use for verifying the deployment of our model. This is done because of the complexity of exposing services external to microk8s (kubernetes) that is outside of the scope of this tutorial.
+
+## Data
+
+[Contained in the data directory](./data) are some images we can classify that will allow us to test the functionality of the model we've deployed.
+
+These images will need to be uploaded to the notebook server once it has been deployed.
