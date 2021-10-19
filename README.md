@@ -20,7 +20,7 @@ NOTE: I've made some edits to the default manifests that are provided with Kubef
 
 ## Kubeflow Pipeline
 
-[Contained in the pipeline directory](./pipeline) is a simple [Kubeflow Pipeline](https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview/) that will train an MNIST classifier and deploy the trained model using [KFServing](https://www.kubeflow.org/docs/components/kfserving/kfserving/) local to the Kubeflow installation.
+[Contained in the pipeline directory](./pipeline/src) is a simple [Kubeflow Pipeline](https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview/) that will train an MNIST classifier and deploy the trained model using [KFServing](https://www.kubeflow.org/docs/components/kfserving/kfserving/) local to the Kubeflow installation.
 
 ## Notebook
 
